@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import org.sanket.algorithms.unionfind.QuickFind;
 import org.sanket.algorithms.unionfind.QuickUnion;
+import org.sanket.algorithms.unionfind.WeightedQuickUnion;
 
 /**
  * Hello world!
@@ -16,6 +17,7 @@ public class App
         AlgorithmContainer container = new AlgorithmContainer();
         container.registerAlgorithm(new QuickFind(10));
         container.registerAlgorithm(new QuickUnion(10));
+        container.registerAlgorithm(new WeightedQuickUnion(10));
 
         System.out.println("Algorithms available:");
         for (String algoName : container.getAlgoNames()) {
