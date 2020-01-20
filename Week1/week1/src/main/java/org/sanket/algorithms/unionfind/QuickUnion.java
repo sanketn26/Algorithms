@@ -27,4 +27,14 @@ public class QuickUnion implements UnionFind {
     public boolean isconnected(int target, int source){
         return getRoot(target) == getRoot(source);
     }
+
+    @Override
+    public String getName() {
+        return "QuickUnion";
+    }
+
+    @Override
+    public void execute() {
+
+    }
 }

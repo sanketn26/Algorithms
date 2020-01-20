@@ -33,4 +33,14 @@ public class QuickFind implements UnionFind {
         return nodes[target] == nodes[source];
     }
 
+    @Override
+    public String getName() {
+        return "QuickFind";
+    }
+
+    @Override
+    public void execute() {
+
+    }
+
 }
